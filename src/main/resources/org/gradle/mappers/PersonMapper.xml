@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- DAO인터페이스 연결 -->
+<mapper namespace="org.gradle.mappers.PersonMapper">
+
+	<resultMap type="Person" id="personResult">
+		<id property="no" column="no" />
+		<result property="name" column="name" />
+	</resultMap>
+
+	<!-- 쿼리문을 연결할 변수(ID)생성후 DTO(ID)와 연결 -->
+	<select id="selectAll" resultType="Person">
+		SELECT * FROM picbox;
+	</select>
+</mapper>
