@@ -33,11 +33,11 @@ ALTER TABLE `blobTest`.`picbox`
 	
 desc picbox;
 
-insert into picbox values(1,'지상훈');
-insert into picbox values(2,'지현주');
-insert into picbox values(3,'곽순단');
-insert into picbox values(4,'지성준');
+insert into picbox values(1,'주형');
+insert into picbox values(2,'문한');
+insert into picbox values(3,'경아');
+insert into picbox values(4,'상훈');
 
 select * from picbox;
 
-
+delete from picbox;
